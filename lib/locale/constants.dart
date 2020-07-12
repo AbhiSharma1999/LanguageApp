@@ -9,6 +9,8 @@ const String LANGUAGE_CODE = 'languageCode';
 Future<Locale> setLocaleinMemory(String languageCode) async {
   SharedPreferences prefs = await SharedPreferences.getInstance();
 
+  print("setlocaleinmemory $languageCode");
+
   await prefs.setString(LANGUAGE_CODE, languageCode);
 
   return _locale(languageCode);
@@ -33,6 +35,7 @@ Locale _locale(String languageCode){
 Future<Locale> getLocale() async{
   SharedPreferences prefs = await SharedPreferences.getInstance();
   String languageCode = prefs.getString(LANGUAGE_CODE) ??  ENGLISH;
+  print("getlocale $languageCode");
   return _locale(languageCode);
 
 }

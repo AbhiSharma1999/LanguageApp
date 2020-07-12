@@ -14,6 +14,7 @@ class _HomeState extends State<Home> {
 
   void _changeLanguage(Language language) async{
     Locale _locale=await setLocaleinMemory(language.languagecode);
+    print("_changeLanguage(Language language)");
 
     MyApp.setLocale(context,_locale);
     
@@ -27,12 +28,12 @@ class _HomeState extends State<Home> {
          crossAxisAlignment: CrossAxisAlignment.center,
          children: <Widget>[
            Text(DemoLocalization.of(context).translate('text')),
-           MaterialButton(onPressed: (){_changeLanguage(Language.languageList[1]);},
+           MaterialButton(onPressed: (){_changeLanguage(Language.languageList[0]);},
                          child: Text("English"),
                          color: Colors.blue,
                          splashColor: Colors.red,
                         ),
-           MaterialButton(onPressed: (){_changeLanguage(Language.languageList[2]);},
+           MaterialButton(onPressed: (){_changeLanguage(Language.languageList[1]);},
                          child: Text("Hindi"),
                          color: Colors.blue,
                          splashColor: Colors.red,
