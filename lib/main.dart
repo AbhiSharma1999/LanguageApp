@@ -4,8 +4,9 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:language_app/locale/DemoLocalization.dart';
 import 'package:language_app/locale/constants.dart';
 import 'package:language_app/pages/Home.dart';
+import 'package:language_app/pages/Welcome.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(WelcomePage());
 
 class MyApp extends StatefulWidget {
 
