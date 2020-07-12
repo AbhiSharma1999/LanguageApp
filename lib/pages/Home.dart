@@ -22,7 +22,23 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       body: Center(child: Text(DemoLocalization.of(context).translate('text'))),
+       body: Column(
+         mainAxisAlignment: MainAxisAlignment.spaceAround,
+         crossAxisAlignment: CrossAxisAlignment.center,
+         children: <Widget>[
+           Text(DemoLocalization.of(context).translate('text')),
+           MaterialButton(onPressed: (){_changeLanguage(Language.languageList[1]);},
+                         child: Text("English"),
+                         color: Colors.blue,
+                         splashColor: Colors.red,
+                        ),
+           MaterialButton(onPressed: (){_changeLanguage(Language.languageList[2]);},
+                         child: Text("Hindi"),
+                         color: Colors.blue,
+                         splashColor: Colors.red,
+                        )
+         ],
+       )
     );
   }
 }
