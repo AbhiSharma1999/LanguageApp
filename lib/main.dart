@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:language_app/locale/DemoLocalization.dart';
+import 'package:language_app/locale/constants.dart';
 import 'package:language_app/pages/Home.dart';
 
 void main() => runApp(MyApp());
@@ -25,10 +26,22 @@ class _MyAppState extends State<MyApp> {
       _locale = locale;
     });
   }
+
+  @override
+  void didChangeDependencies() {
+
+    getLocale().then((locale) {
+      setState(() {
+        this._locale = locale;
+      });
+    });
+    super.didChangeDependencies();
+    
+  }
   
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return _locale==null?Center(child:CircularProgressIndicator()): MaterialApp(
       title:"Demo",
       locale: _locale,
       theme: ThemeData(primarySwatch: Colors.blue),

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:language_app/locale/DemoLocalization.dart';
+import 'package:language_app/locale/constants.dart';
 import 'package:language_app/main.dart';
 import 'package:language_app/models/Language.dart';
 
@@ -10,8 +12,8 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
 
-  void _changeLanguage(Language language){
-    Locale _locale=Locale(language.languagecode,language.countrycode);
+  void _changeLanguage(Language language) async{
+    Locale _locale=await setLocaleinMemory(language.languagecode);
 
     MyApp.setLocale(context,_locale);
     
@@ -19,8 +21,8 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-       child: child,
+    return Scaffold(
+       body: Center(child: Text(DemoLocalization.of(context).translate('text'))),
     );
   }
 }

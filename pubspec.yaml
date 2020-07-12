@@ -13,7 +13,7 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-
+  shared_preferences: any
   cupertino_icons: ^0.1.3
 
 dev_dependencies:
@@ -25,6 +25,6 @@ flutter:
   uses-material-design: true
 
 
-assets:
-  -lib/language/en.json
-  -lib/language/hi.json
+  assets:
+    - lib/language/en.json
+    - lib/language/hi.json
