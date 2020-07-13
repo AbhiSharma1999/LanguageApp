@@ -23,6 +23,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   Locale _locale;
 
+
   void setLocaleState(Locale locale){
     setState(() {
       _locale = locale;
@@ -31,6 +32,7 @@ class _MyAppState extends State<MyApp> {
     String languagecode = locale.languageCode;
     print("setlocalestate $languagecode");
   }
+
 
   @override
   void didChangeDependencies() {
@@ -51,8 +53,19 @@ class _MyAppState extends State<MyApp> {
       locale: _locale,
       theme: ThemeData(primarySwatch: Colors.blue),
       supportedLocales: [
+        Locale('la','AN'),
         Locale('en','US'),
-        Locale('hi','IN')
+        Locale('hi','IN'),
+        Locale('sa','IN'),        
+        Locale('ru','RU'),
+        Locale('de','DE'),
+        Locale('es','ES'),
+        Locale('fr','FR'),
+        Locale('he','IL'),
+        Locale('ur','PK'),
+        Locale('ar','SA'),
+        Locale('zh','HK'),
+        Locale('ja','JP'),
       ],
       localizationsDelegates: [
         DemoLocalization.delegate,

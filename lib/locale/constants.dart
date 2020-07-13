@@ -17,6 +17,12 @@ Future<Locale> setLocaleinMemory(String languageCode) async {
 
 }
 
+
+
+
+
+
+
 Locale _locale(String languageCode){
   Locale _temp;
   switch(languageCode){

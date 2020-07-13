@@ -15,7 +15,7 @@ dependencies:
     sdk: flutter
   shared_preferences: any
   cupertino_icons: ^0.1.3
-  auto_size_text: ^2.1.0
+  clay_containers: ^0.2.2
 
 dev_dependencies:
   flutter_test:
@@ -29,3 +29,19 @@ flutter:
   assets:
     - lib/language/en.json
     - lib/language/hi.json
+    - lib/language/ar.json
+    - lib/language/de.json
+    - lib/language/es.json
+    - lib/language/fr.json
+    - lib/language/he.json
+    - lib/language/ja.json
+    - lib/language/la.json
+    - lib/language/ru.json
+    - lib/language/sa.json
+    - lib/language/ur.json
+    - lib/language/zh.json    
+
+  fonts:
+    - family: Custom
+      fonts:
+        - asset: lib/assets/Custom.ttf

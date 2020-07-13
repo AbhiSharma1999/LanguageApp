@@ -33,7 +33,7 @@ class _DemoLocalizationsDelegate extends LocalizationsDelegate<DemoLocalization>
 
   @override
   bool isSupported(Locale locale) {
-    return ['en','hi'].contains(locale.languageCode);
+    return ['en','hi','ar','de','es','fr','he','ja','la','ru','sa','ur','zh'].contains(locale.languageCode);
   }
 
   @override
