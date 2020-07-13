@@ -1,4 +1,4 @@
-A Simple Mobile application for changing the language of the entire application.
+A Simple Mobile application demonstrating the change of language in the entire application.
 
 Used Localization package provided by flutter along with json to map different languages .
 
