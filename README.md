@@ -1,16 +1,11 @@
-# language_app
+A Simple Mobile application demonstrating the change of language in the entire application.
 
-A new Flutter project.
+Used Localization package provided by flutter along with json to map different languages .
 
-## Getting Started
+Added Neumorphic elements and unique custom page transitions to improve UX.
 
-This project is a starting point for a Flutter application.
+The language selected is persistant whenever user opens the application and that was achived using sharedPreferences.
 
-A few resources to get you started if this is your first Flutter project:
+Consists of 3 pages Welcome page , Home Page and a Settings Page.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The debug apk can be found at build/app/outputs/apk
