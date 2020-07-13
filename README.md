@@ -8,6 +8,7 @@ The language selected is persistant whenever user opens the application and that
 
 Consists of 3 pages Welcome page , Home Page and a Settings Page.
 
-The debug apk can be found at build/app/outputs/apk
+The debug apk can be found at /build/app/outputs/apk.
 
-![Demo](demo/demo.gif)
+The Demo to the appliction can be found at /demo.
+
